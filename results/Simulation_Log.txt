@@ -1,0 +1,18 @@
+[user@ICESB-OJT-GSEP-AUG26 GPIO]$ ./simv | tee simv.log
+Info: [VCS_SAVE_RESTORE_INFO] ASLR (Address Space Layout Randomization) is detected on the machine. To enable $save functionality, ASLR will be switched off and simv re-executed.
+Please use '-no_save' simv switch to avoid re-execution or '-suppress=ASLR_DETECTED_INFO' to suppress this message.
+Chronologic VCS simulator copyright 1991-2023
+Contains Synopsys proprietary information.
+Compiler version V-2023.12-SP2_Full64; Runtime version V-2023.12-SP2_Full64;  Sep 17 14:24 2026
+VCD+ Writer V-2023.12-SP2_Full64 Copyright (c) 1991-2023 by Synopsys Inc.
+PASS: DIR REG = ffffffff (expected ffffffff)
+PASS: GPIO_out = a5a5a5a5 (expected a5a5a5a5)
+PASS: DATA_OUT READBACK = a5a5a5a5 (expected a5a5a5a5)
+PASS: DATA_IN READ = 12345678 (expected 12345678)
+$finish called from file "tb_gpio_basic.sv", line 193.
+$finish at simulation time              1170000
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 1170000 ps
+CPU Time:      1.040 seconds;       Data structure size:   0.0Mb
+Thu Sep 17 14:24:04 2026
+[user@ICESB-OJT-GSEP-AUG26 GPIO]$ 
